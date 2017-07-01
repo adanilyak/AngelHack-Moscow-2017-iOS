@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  AngelHackMoscow
+
+  Created by Alexander Danilyak on 01/07/2017.
+  Copyright © 2017 Alexander Danilyak. All rights reserved.
+*/
+
+"cameraOrLibrary" = "Choose source";
+"cameraOrLibraryDescription" = "Take photo or choose existing photo from Image Library";
+"camera" = "Camera";
+"library" = "Library";
+"cancel" = "Cancel";

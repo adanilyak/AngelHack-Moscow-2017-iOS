@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xb0-jj-XoX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Solutions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="AngelHackMoscow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-bj-WQu">
+                                <rect key="frame" x="-0.5" y="0.0" width="375.5" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6P0-DT-Ag2"/>
+                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dpw-an-Dyu"/>
+                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="OmL-Gi-jSj"/>
+                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zGw-0N-7kO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Solutions" largeTitleDisplayMode="always" id="6cS-n5-eWd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DYN-je-Fch">
+                            <connections>
+                                <action selector="onCameraButton:" destination="BYZ-38-t0r" id="9iz-SD-ZPJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="DYN-je-Fch" id="J3v-GZ-ceO"/>
+                        <outlet property="imageView" destination="UJ5-bj-WQu" id="bYj-of-t6A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R39-3i-VGQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xb0-jj-XoX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPO-Ql-ze6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1MO-Xw-pq3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1D7-0N-cjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="139"/>
+        </scene>
+    </scenes>
+</document>

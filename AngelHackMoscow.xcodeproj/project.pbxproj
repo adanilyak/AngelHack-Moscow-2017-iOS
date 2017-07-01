@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117317191F07CDCA00EFE06F /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117317181F07CDCA00EFE06F /* ActivityView.xib */; };
+		11BDDEF11F07BBD500CF5EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDDEF01F07BBD500CF5EAB /* AppDelegate.swift */; };
+		11BDDEF61F07BBD500CF5EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDEF41F07BBD500CF5EAB /* Main.storyboard */; };
+		11BDDEF81F07BBD500CF5EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDEF71F07BBD500CF5EAB /* Assets.xcassets */; };
+		11BDDEFB1F07BBD500CF5EAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDEF91F07BBD500CF5EAB /* LaunchScreen.storyboard */; };
+		11BDDF031F07BC2F00CF5EAB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDDF021F07BC2F00CF5EAB /* MainController.swift */; };
+		11BDDF0C1F07BEB400CF5EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDF0E1F07BEB400CF5EAB /* Localizable.strings */; };
+		11BDDF111F07C0BE00CF5EAB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDDF101F07C0BE00CF5EAB /* Helpers.swift */; };
+		11BDDF141F07C90900CF5EAB /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDDF131F07C90900CF5EAB /* ActivityView.swift */; };
+		235C6548139ADB42F7B808E6 /* Pods_AngelHackMoscow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AC89534D01F54BEAD4D11 /* Pods_AngelHackMoscow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D5C581469970C8F18CBC771 /* Pods-AngelHackMoscow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelHackMoscow.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelHackMoscow/Pods-AngelHackMoscow.release.xcconfig"; sourceTree = "<group>"; };
+		117317181F07CDCA00EFE06F /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		11BDDEED1F07BBD500CF5EAB /* AngelHackMoscow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelHackMoscow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11BDDEF01F07BBD500CF5EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11BDDEF51F07BBD500CF5EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11BDDEF71F07BBD500CF5EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11BDDEFA1F07BBD500CF5EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11BDDEFC1F07BBD500CF5EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BDDF021F07BC2F00CF5EAB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		11BDDF081F07BE3B00CF5EAB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		11BDDF091F07BE3B00CF5EAB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		11BDDF0D1F07BEB400CF5EAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11BDDF0F1F07BEB900CF5EAB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11BDDF101F07C0BE00CF5EAB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		11BDDF131F07C90900CF5EAB /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		783AC89534D01F54BEAD4D11 /* Pods_AngelHackMoscow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngelHackMoscow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF021B8A623FE0FE9019AC9 /* Pods-AngelHackMoscow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelHackMoscow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelHackMoscow/Pods-AngelHackMoscow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11BDDEEA1F07BBD500CF5EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235C6548139ADB42F7B808E6 /* Pods_AngelHackMoscow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FAFB0A0A1575FDF0008520 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF021B8A623FE0FE9019AC9 /* Pods-AngelHackMoscow.debug.xcconfig */,
+				0D5C581469970C8F18CBC771 /* Pods-AngelHackMoscow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		11BDDEE41F07BBD500CF5EAB = {
+			isa = PBXGroup;
+			children = (
+				11BDDEEF1F07BBD500CF5EAB /* AngelHackMoscow */,
+				11BDDEEE1F07BBD500CF5EAB /* Products */,
+				02FAFB0A0A1575FDF0008520 /* Pods */,
+				80270CB124037ACFF6FA62A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11BDDEEE1F07BBD500CF5EAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDEED1F07BBD500CF5EAB /* AngelHackMoscow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11BDDEEF1F07BBD500CF5EAB /* AngelHackMoscow */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDF071F07BDEA00CF5EAB /* AppDelegate */,
+				11BDDF041F07BDB700CF5EAB /* Controllers */,
+				11BDDF051F07BDC100CF5EAB /* Storyboards */,
+				11BDDF061F07BDE100CF5EAB /* Resources */,
+				11BDDF121F07C0C400CF5EAB /* Helpers */,
+				11BDDF151F07C90C00CF5EAB /* View */,
+			);
+			path = AngelHackMoscow;
+			sourceTree = "<group>";
+		};
+		11BDDF041F07BDB700CF5EAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDF021F07BC2F00CF5EAB /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11BDDF051F07BDC100CF5EAB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDEF41F07BBD500CF5EAB /* Main.storyboard */,
+				11BDDEF91F07BBD500CF5EAB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11BDDF061F07BDE100CF5EAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDEF71F07BBD500CF5EAB /* Assets.xcassets */,
+				11BDDEFC1F07BBD500CF5EAB /* Info.plist */,
+				11BDDF0E1F07BEB400CF5EAB /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11BDDF071F07BDEA00CF5EAB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDEF01F07BBD500CF5EAB /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11BDDF121F07C0C400CF5EAB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDF101F07C0BE00CF5EAB /* Helpers.swift */,
+			);
+			name = Helpers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		11BDDF151F07C90C00CF5EAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11BDDF131F07C90900CF5EAB /* ActivityView.swift */,
+				117317181F07CDCA00EFE06F /* ActivityView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80270CB124037ACFF6FA62A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				783AC89534D01F54BEAD4D11 /* Pods_AngelHackMoscow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11BDDEEC1F07BBD500CF5EAB /* AngelHackMoscow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11BDDEFF1F07BBD500CF5EAB /* Build configuration list for PBXNativeTarget "AngelHackMoscow" */;
+			buildPhases = (
+				EE76E20D63CA9E04576AE315 /* [CP] Check Pods Manifest.lock */,
+				11BDDEE91F07BBD500CF5EAB /* Sources */,
+				11BDDEEA1F07BBD500CF5EAB /* Frameworks */,
+				11BDDEEB1F07BBD500CF5EAB /* Resources */,
+				BEB18CD8C5BD789BF72CEABC /* [CP] Embed Pods Frameworks */,
+				65F1968E0F761D32955F0664 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngelHackMoscow;
+			productName = AngelHackMoscow;
+			productReference = 11BDDEED1F07BBD500CF5EAB /* AngelHackMoscow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11BDDEE51F07BBD500CF5EAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Alexander Danilyak";
+				TargetAttributes = {
+					11BDDEEC1F07BBD500CF5EAB = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 11BDDEE81F07BBD500CF5EAB /* Build configuration list for PBXProject "AngelHackMoscow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 11BDDEE41F07BBD500CF5EAB;
+			productRefGroup = 11BDDEEE1F07BBD500CF5EAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11BDDEEC1F07BBD500CF5EAB /* AngelHackMoscow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11BDDEEB1F07BBD500CF5EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BDDEFB1F07BBD500CF5EAB /* LaunchScreen.storyboard in Resources */,
+				11BDDF0C1F07BEB400CF5EAB /* Localizable.strings in Resources */,
+				11BDDEF81F07BBD500CF5EAB /* Assets.xcassets in Resources */,
+				117317191F07CDCA00EFE06F /* ActivityView.xib in Resources */,
+				11BDDEF61F07BBD500CF5EAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F1968E0F761D32955F0664 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelHackMoscow/Pods-AngelHackMoscow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB18CD8C5BD789BF72CEABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelHackMoscow/Pods-AngelHackMoscow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE76E20D63CA9E04576AE315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11BDDEE91F07BBD500CF5EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BDDF031F07BC2F00CF5EAB /* MainController.swift in Sources */,
+				11BDDF141F07C90900CF5EAB /* ActivityView.swift in Sources */,
+				11BDDF111F07C0BE00CF5EAB /* Helpers.swift in Sources */,
+				11BDDEF11F07BBD500CF5EAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11BDDEF41F07BBD500CF5EAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BDDEF51F07BBD500CF5EAB /* Base */,
+				11BDDF081F07BE3B00CF5EAB /* ru */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		11BDDEF91F07BBD500CF5EAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BDDEFA1F07BBD500CF5EAB /* Base */,
+				11BDDF091F07BE3B00CF5EAB /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		11BDDF0E1F07BEB400CF5EAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11BDDF0D1F07BEB400CF5EAB /* en */,
+				11BDDF0F1F07BEB900CF5EAB /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11BDDEFD1F07BBD500CF5EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11BDDEFE1F07BBD500CF5EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11BDDF001F07BBD500CF5EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF021B8A623FE0FE9019AC9 /* Pods-AngelHackMoscow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XBBK9UCLZS;
+				INFOPLIST_FILE = "$(SRCROOT)/AngelHackMoscow/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adanilyak.AngelHackMoscow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11BDDF011F07BBD500CF5EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5C581469970C8F18CBC771 /* Pods-AngelHackMoscow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XBBK9UCLZS;
+				INFOPLIST_FILE = "$(SRCROOT)/AngelHackMoscow/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adanilyak.AngelHackMoscow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11BDDEE81F07BBD500CF5EAB /* Build configuration list for PBXProject "AngelHackMoscow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BDDEFD1F07BBD500CF5EAB /* Debug */,
+				11BDDEFE1F07BBD500CF5EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11BDDEFF1F07BBD500CF5EAB /* Build configuration list for PBXNativeTarget "AngelHackMoscow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11BDDF001F07BBD500CF5EAB /* Debug */,
+				11BDDF011F07BBD500CF5EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11BDDEE51F07BBD500CF5EAB /* Project object */;
+}
