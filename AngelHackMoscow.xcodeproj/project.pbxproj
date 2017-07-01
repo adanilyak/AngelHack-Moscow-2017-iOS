@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		117317191F07CDCA00EFE06F /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117317181F07CDCA00EFE06F /* ActivityView.xib */; };
+		1173171B1F07D5CA00EFE06F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173171A1F07D5CA00EFE06F /* API.swift */; };
+		1173171E1F07DC3900EFE06F /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173171D1F07DC3900EFE06F /* Look.swift */; };
+		117317211F07F2B800EFE06F /* LookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117317201F07F2B800EFE06F /* LookController.swift */; };
+		117317231F07F37600EFE06F /* LookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117317221F07F37600EFE06F /* LookView.swift */; };
+		117317251F08312000EFE06F /* PageLooksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117317241F08312000EFE06F /* PageLooksController.swift */; };
 		11BDDEF11F07BBD500CF5EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDDEF01F07BBD500CF5EAB /* AppDelegate.swift */; };
 		11BDDEF61F07BBD500CF5EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDEF41F07BBD500CF5EAB /* Main.storyboard */; };
 		11BDDEF81F07BBD500CF5EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDDEF71F07BBD500CF5EAB /* Assets.xcassets */; };
@@ -22,6 +27,11 @@
 /* Begin PBXFileReference section */
 		0D5C581469970C8F18CBC771 /* Pods-AngelHackMoscow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelHackMoscow.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelHackMoscow/Pods-AngelHackMoscow.release.xcconfig"; sourceTree = "<group>"; };
 		117317181F07CDCA00EFE06F /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		1173171A1F07D5CA00EFE06F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1173171D1F07DC3900EFE06F /* Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
+		117317201F07F2B800EFE06F /* LookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookController.swift; sourceTree = "<group>"; };
+		117317221F07F37600EFE06F /* LookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookView.swift; sourceTree = "<group>"; };
+		117317241F08312000EFE06F /* PageLooksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageLooksController.swift; sourceTree = "<group>"; };
 		11BDDEED1F07BBD500CF5EAB /* AngelHackMoscow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelHackMoscow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BDDEF01F07BBD500CF5EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BDDEF51F07BBD500CF5EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +70,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1173171C1F07D5CE00EFE06F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1173171A1F07D5CA00EFE06F /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1173171F1F07DC3D00EFE06F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1173171D1F07DC3900EFE06F /* Look.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11BDDEE41F07BBD500CF5EAB = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +113,8 @@
 				11BDDF061F07BDE100CF5EAB /* Resources */,
 				11BDDF121F07C0C400CF5EAB /* Helpers */,
 				11BDDF151F07C90C00CF5EAB /* View */,
+				1173171C1F07D5CE00EFE06F /* API */,
+				1173171F1F07DC3D00EFE06F /* Models */,
 			);
 			path = AngelHackMoscow;
 			sourceTree = "<group>";
@@ -95,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				11BDDF021F07BC2F00CF5EAB /* MainController.swift */,
+				117317201F07F2B800EFE06F /* LookController.swift */,
+				117317241F08312000EFE06F /* PageLooksController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +170,7 @@
 			children = (
 				11BDDF131F07C90900CF5EAB /* ActivityView.swift */,
 				117317181F07CDCA00EFE06F /* ActivityView.xib */,
+				117317221F07F37600EFE06F /* LookView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,10 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1173171E1F07DC3900EFE06F /* Look.swift in Sources */,
+				117317231F07F37600EFE06F /* LookView.swift in Sources */,
+				117317251F08312000EFE06F /* PageLooksController.swift in Sources */,
 				11BDDF031F07BC2F00CF5EAB /* MainController.swift in Sources */,
 				11BDDF141F07C90900CF5EAB /* ActivityView.swift in Sources */,
 				11BDDF111F07C0BE00CF5EAB /* Helpers.swift in Sources */,
+				117317211F07F2B800EFE06F /* LookController.swift in Sources */,
 				11BDDEF11F07BBD500CF5EAB /* AppDelegate.swift in Sources */,
+				1173171B1F07D5CA00EFE06F /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +465,7 @@
 			baseConfigurationReference = 7EF021B8A623FE0FE9019AC9 /* Pods-AngelHackMoscow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = XBBK9UCLZS;
 				INFOPLIST_FILE = "$(SRCROOT)/AngelHackMoscow/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -445,6 +482,7 @@
 			baseConfigurationReference = 0D5C581469970C8F18CBC771 /* Pods-AngelHackMoscow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = XBBK9UCLZS;
 				INFOPLIST_FILE = "$(SRCROOT)/AngelHackMoscow/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

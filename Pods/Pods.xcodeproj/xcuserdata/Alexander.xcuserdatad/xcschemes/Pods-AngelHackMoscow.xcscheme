@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEA05BF4F6C87480E2C96947369CAFFD"
+               BlueprintIdentifier = "15FEE3BEBDD99AEA3913ED9DD6A5E505"
                BuildableName = "Pods_AngelHackMoscow.framework"
                BlueprintName = "Pods-AngelHackMoscow"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AEA05BF4F6C87480E2C96947369CAFFD"
+            BlueprintIdentifier = "15FEE3BEBDD99AEA3913ED9DD6A5E505"
             BuildableName = "Pods_AngelHackMoscow.framework"
             BlueprintName = "Pods-AngelHackMoscow"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xb0-jj-XoX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U23-Lg-Ytf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Color Solutions-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainController" customModule="AngelHackMoscow" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,51 +22,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-bj-WQu">
-                                <rect key="frame" x="-0.5" y="0.0" width="375.5" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-sO-cOg">
+                                <rect key="frame" x="37.5" y="70" width="300" height="300"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="irL-QM-cxO">
+                                <rect key="frame" x="37.5" y="70" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2AD-OB-DvX"/>
+                                    <constraint firstAttribute="width" secondItem="irL-QM-cxO" secondAttribute="height" multiplier="1:1" id="ums-uO-iJx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z1-zE-Rxp">
+                                <rect key="frame" x="67.5" y="498.5" width="240" height="75"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.0" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Dao-kn-j6f"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mzt-MI-iyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Upload Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCreatePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tS-Cm-Pnp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angelhack" translatesAutoresizingMaskIntoConstraints="NO" id="MCu-6g-Smi">
+                                <rect key="frame" x="137" y="603.5" width="100" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MCu-6g-Smi" secondAttribute="height" multiplier="148:79" id="mHo-PS-S3p"/>
+                                    <constraint firstAttribute="width" constant="100" id="pQW-x5-w7g"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHb-mX-nNL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="zed-Za-hSv"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6P0-DT-Ag2"/>
-                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dpw-an-Dyu"/>
-                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="OmL-Gi-jSj"/>
-                            <constraint firstItem="UJ5-bj-WQu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zGw-0N-7kO"/>
+                            <constraint firstItem="irL-QM-cxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Ue-18-s1K"/>
+                            <constraint firstItem="EHb-mX-nNL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4oi-SM-O5S"/>
+                            <constraint firstItem="irL-QM-cxO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="75u-ka-gAj"/>
+                            <constraint firstItem="MCu-6g-Smi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8n2-BI-uOK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MCu-6g-Smi" secondAttribute="bottom" constant="10" id="A7o-dH-xLe"/>
+                            <constraint firstItem="MCu-6g-Smi" firstAttribute="top" secondItem="2Z1-zE-Rxp" secondAttribute="bottom" constant="30" id="AGV-hK-oiL"/>
+                            <constraint firstAttribute="trailing" secondItem="EHb-mX-nNL" secondAttribute="trailing" id="AZd-HS-UhN"/>
+                            <constraint firstItem="Y6r-sO-cOg" firstAttribute="centerX" secondItem="irL-QM-cxO" secondAttribute="centerX" id="JLF-3c-wdM"/>
+                            <constraint firstItem="Y6r-sO-cOg" firstAttribute="height" secondItem="irL-QM-cxO" secondAttribute="height" id="KCr-vZ-UVu"/>
+                            <constraint firstItem="EHb-mX-nNL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KQi-4m-lZw"/>
+                            <constraint firstItem="Y6r-sO-cOg" firstAttribute="centerY" secondItem="irL-QM-cxO" secondAttribute="centerY" id="Tqv-zD-0xR"/>
+                            <constraint firstItem="Y6r-sO-cOg" firstAttribute="width" secondItem="irL-QM-cxO" secondAttribute="width" id="jcC-Fv-IRe"/>
+                            <constraint firstItem="2Z1-zE-Rxp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgD-5V-haB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Color Solutions" largeTitleDisplayMode="always" id="6cS-n5-eWd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DYN-je-Fch">
-                            <connections>
-                                <action selector="onCameraButton:" destination="BYZ-38-t0r" id="9iz-SD-ZPJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="6cS-n5-eWd"/>
                     <connections>
-                        <outlet property="cameraButton" destination="DYN-je-Fch" id="J3v-GZ-ceO"/>
-                        <outlet property="imageView" destination="UJ5-bj-WQu" id="bYj-of-t6A"/>
+                        <outlet property="createPhotoButton" destination="2Z1-zE-Rxp" id="iar-E1-dKo"/>
+                        <outlet property="frameImageView" destination="Y6r-sO-cOg" id="FDs-9R-Tgg"/>
+                        <outlet property="logoImageView" destination="irL-QM-cxO" id="aF0-Zc-0eI"/>
+                        <segue destination="5XQ-AA-cxE" kind="show" identifier="toLooks" id="zZh-m1-Dyw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584.79999999999995" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1390" y="139"/>
+        </scene>
+        <!--Page Looks Controller-->
+        <scene sceneID="MVm-NV-84i">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="20" navigationOrientation="horizontal" spineLocation="none" id="5XQ-AA-cxE" customClass="PageLooksController" customModule="AngelHackMoscow" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D7v-3h-hKy"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eca-rl-FZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="139"/>
+        </scene>
+        <!--Look Controller-->
+        <scene sceneID="G82-wa-fH7">
+            <objects>
+                <viewController storyboardIdentifier="lookController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iJG-YO-KHs" customClass="LookController" customModule="AngelHackMoscow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jr-89-sMx"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2V-zB-qLp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SG9-W4-a6T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sX0-lo-2cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="852"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="R39-3i-VGQ">
+        <scene sceneID="Ikd-mK-09s">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xb0-jj-XoX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="U23-Lg-Ytf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CPO-Ql-ze6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJ2-w5-QvO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1MO-Xw-pq3"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eyi-TA-0ZH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1D7-0N-cjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUG-K5-M58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="139"/>
+            <point key="canvasLocation" x="499.19999999999999" y="138.53073463268368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="angelhack" width="1920" height="1080"/>
+        <image name="frame" width="1024" height="1024"/>
+        <image name="logo" width="1024" height="1024"/>
+    </resources>
 </document>

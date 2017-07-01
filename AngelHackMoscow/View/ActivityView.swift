@@ -10,10 +10,9 @@ import UIKit
 
 class ActivityView: UIView {
     
-    let title: UILabel = {
-        let label: UILabel = UILabel()
-        return label
-    }()
+    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,7 +25,12 @@ class ActivityView: UIView {
     }
     
     private func commonInit() {
-        
+        Bundle.main.loadNibNamed("ActivityView",
+                                 owner: self,
+                                 options: nil)
+        addSubview(contentView)
+        contentView.frame = bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
     
 }

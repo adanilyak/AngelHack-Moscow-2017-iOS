@@ -6,8 +6,23 @@
   Copyright © 2017 Alexander Danilyak. All rights reserved.
 */
 
+"errorTitle" = "Error";
+"errorDescription" = "Try again";
+"errorOk" = "Ok";
+
+"addPhoto" = "Add Photo";
+
+"buy" = "Buy";
+
+"buySuccess" = "Success";
+"buyDescription" = "Paid. Courier will deliver your Look!";
+
 "cameraOrLibrary" = "Choose source";
 "cameraOrLibraryDescription" = "Take photo or choose existing photo from Image Library";
 "camera" = "Camera";
 "library" = "Library";
 "cancel" = "Cancel";
+
+"analyzing" = "Analyzing";
+
+"lookWithNum" = "Look #%@";

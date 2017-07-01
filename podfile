@@ -2,5 +2,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'AngelHackMoscow' do
-  pod 'AFNetworking'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'SwiftyJSON'
 end

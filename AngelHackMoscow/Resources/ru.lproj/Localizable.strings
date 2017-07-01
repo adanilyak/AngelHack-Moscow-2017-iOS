@@ -6,8 +6,23 @@
   Copyright © 2017 Alexander Danilyak. All rights reserved.
 */
 
+"errorTitle" = "Ошибка";
+"errorDescription" = "Попробуйте ещё раз";
+"errorOk" = "Окей";
+
+"addPhoto" = "Добавить фото";
+
+"buy" = "Купить";
+
+"buySuccess" = "Отлично";
+"buyDescription" = "Оплачено. Курьер скоро доставит ваш набор одежды!";
+
 "cameraOrLibrary" = "Выберете источник";
 "cameraOrLibraryDescription" = "Сделайте фото или выберете уже существующее из Галереи";
 "camera" = "Камера";
 "library" = "Галерея";
 "cancel" = "Отмена";
+
+"analyzing" = "Анализируем";
+
+"lookWithNum" = "Набор #%@";
