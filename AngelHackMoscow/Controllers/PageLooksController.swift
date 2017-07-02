@@ -45,7 +45,7 @@ class PageLooksController: UIPageViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = false
         
-        buyButton.center = CGPoint(x: view.center.x, y: view.bounds.height - 80)
+        buyButton.center = CGPoint(x: view.center.x, y: view.bounds.height - 60)
         view.addSubview(buyButton)
     }
     

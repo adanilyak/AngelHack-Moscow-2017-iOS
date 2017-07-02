@@ -11,15 +11,20 @@ import UIKit
 class LookView: UIView {
     
     var r: Double {
-        return Double(bounds.width / 2.75)
+        let coef = (look?.items.count ?? 0) < 5 ? 2.25 : 2.75
+        return Double(bounds.width) / coef
     }
     
     func imageViewSide(item: Item) -> Double {
         switch item.type {
         case .top, .bottom, .dress, .outer:
             return Double(bounds.width) * 0.50
+        case .earrings, .bracelet:
+            return Double(bounds.width) * 0.40
+        case .shoes:
+            return Double(bounds.width) * 0.30
         default:
-            return Double(bounds.width) * 0.20
+            return Double(bounds.width) * 0.30
         }
     }
     
@@ -109,13 +114,15 @@ class LookView: UIView {
         let angles = stride(from: 0.0, to: 360.0, by: 360.0/Double(number))
         for a in angles {
             
-            let x = r * cos(a) + Double(thisCenter.x)
+            let ra = (a / 180.0) * Double.pi
+            
+            let x = r * cos(ra) + Double(thisCenter.x)
             
             let delta = a <= 180.0 ? abs(a - _pi_2) : abs(a - _3pi_2)
-            let scale = max(1.0, 2.0 - delta / 90.0)
+            let scale = max(1.0, 1.2 - 0.2 * delta / 90.0)
             
-            let y = r * scale * sin(a) + Double(thisCenter.y)
-            
+            let y = r * scale * sin(ra) + Double(thisCenter.y)
+
             points.append(CGPoint(x: x, y: y))
         }
         

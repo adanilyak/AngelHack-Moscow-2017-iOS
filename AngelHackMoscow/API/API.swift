@@ -17,7 +17,9 @@ class API {
     func findLooks(image: UIImage,
                    onSuccess: (([Look]) -> Void)? = nil,
                    onError: ((String) -> Void)? = nil) {
-        guard let data = UIImageJPEGRepresentation(image, 0.5) else {
+        
+        
+        guard let data = UIImageJPEGRepresentation(correctlyOrientedImage(image: image), 0.5) else {
             return
         }
         
@@ -44,6 +46,7 @@ class API {
                                     switch response.result {
                                     case .success(_):
                                         if response.response!.statusCode >= 400 {
+                                            onError?(localize(key: "errorDescription") + " [\(response.response!.statusCode)]")
                                             print("[FIND LOOKS] ERROR")
                                         } else {
                                             let result = JSON(response.result.value!)

@@ -55,3 +55,16 @@ func setPageControllApperance() {
     pageApperance.pageIndicatorTintColor = lightTintColor
     pageApperance.backgroundColor = UIColor.white
 }
+
+func correctlyOrientedImage(image: UIImage) -> UIImage {
+    if image.imageOrientation == UIImageOrientation.up {
+        return image
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+    image.draw(in: CGRect(x: 0,y: 0, width: image.size.width, height: image.size.height))
+    let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!;
+    UIGraphicsEndImageContext();
+    
+    return normalizedImage;
+}

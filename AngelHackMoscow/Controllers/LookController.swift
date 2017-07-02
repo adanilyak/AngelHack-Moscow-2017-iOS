@@ -23,7 +23,7 @@ class LookController: UIViewController {
         
         if let l = look,
             let lv = lookView {
-            lv.center = CGPoint(x: view.center.x, y: view.center.y - 70)
+            lv.center = CGPoint(x: view.center.x, y: view.center.y - 45)
             view.addSubview(lv)
             lv.set(look: l)
             
